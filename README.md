@@ -9,7 +9,7 @@
 |------|------------|
 | **Book Management** | Google Books search, one‑click add, “Want to Read / Currently Reading / Read” shelves, star‑rating & reviews. |
 | **Social Hub** | Follow / unfollow users, view public shelves & an activity feed of friends’ latest reads. |
-| **Reading Journal** | Private rich‑text notes per book to capture thoughts while reading. :contentReference |
+| **Reading Journal** | Private rich‑text notes per book to capture thoughts while reading. |
 | **Analytics** | Simple dashboards (books read, genre pie‑chart, yearly goal progress) built with Chart.js.  |
 | **Secure Auth** | JWT‑based login / register, hashed passwords with bcrypt.  |
 
