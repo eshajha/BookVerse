@@ -1,17 +1,17 @@
 # 📚 BookVerse
 
-**BookVerse** is a full‑stack MERN (MongoDB • Express • React • Node.js) social‑reading platform that lets book lovers track their reading journey, organise books into custom shelves, write reviews, and connect with fellow readers. It combines a personal reading journal, rich social features, and a clean analytics dashboard in one responsive web app. :contentReference[oaicite:0]{index=0}
+**BookVerse** is a full‑stack MERN (MongoDB • Express • React • Node.js) social‑reading platform that lets book lovers track their reading journey, organise books into custom shelves, write reviews, and connect with fellow readers. It combines a personal reading journal, rich social features, and a clean analytics dashboard in one responsive web app. 
 
 ---
 
 ## ✨ Key Features
 | Area | Highlights |
 |------|------------|
-| **Book Management** | Google Books search, one‑click add, “Want to Read / Currently Reading / Read” shelves, star‑rating & reviews. :contentReference[oaicite:1]{index=1} |
-| **Social Hub** | Follow / unfollow users, view public shelves & an activity feed of friends’ latest reads. :contentReference[oaicite:2]{index=2} |
-| **Reading Journal** | Private rich‑text notes per book to capture thoughts while reading. :contentReference[oaicite:3]{index=3} |
-| **Analytics** | Simple dashboards (books read, genre pie‑chart, yearly goal progress) built with Chart.js. :contentReference[oaicite:4]{index=4} |
-| **Secure Auth** | JWT‑based login / register, hashed passwords with bcrypt. :contentReference[oaicite:5]{index=5} |
+| **Book Management** | Google Books search, one‑click add, “Want to Read / Currently Reading / Read” shelves, star‑rating & reviews. |
+| **Social Hub** | Follow / unfollow users, view public shelves & an activity feed of friends’ latest reads. |
+| **Reading Journal** | Private rich‑text notes per book to capture thoughts while reading. :contentReference |
+| **Analytics** | Simple dashboards (books read, genre pie‑chart, yearly goal progress) built with Chart.js.  |
+| **Secure Auth** | JWT‑based login / register, hashed passwords with bcrypt.  |
 
 ---
 
