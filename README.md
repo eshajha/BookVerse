@@ -1,30 +1,37 @@
 # 📚 BookVerse
 
-**BookVerse** is a full‑stack MERN (MongoDB • Express • React • Node.js) social‑reading platform that lets book lovers track their reading journey, organise books into custom shelves, write reviews, and connect with fellow readers. It combines a personal reading journal, rich social features, and a clean analytics dashboard in one responsive web app. 
+**BookVerse** is a personal reading management application where users can search books, organize them into shelves like 'Want to Read', 'Currently Reading', and 'Read', and maintain their reading progress in a clean interface.
+ 
 
 ---
 
-## ✨ Key Features
-| Area | Highlights |
-|------|------------|
-| **Book Management** | Google Books search, one‑click add, “Want to Read / Currently Reading / Read” shelves, star‑rating & reviews. |
-| **Social Hub** | Follow / unfollow users, view public shelves & an activity feed of friends’ latest reads. |
-| **Reading Journal** | Private rich‑text notes per book to capture thoughts while reading. |
-| **Analytics** | Simple dashboards (books read, genre pie‑chart, yearly goal progress) built with Chart.js.  |
-| **Secure Auth** | JWT‑based login / register, hashed passwords with bcrypt.  |
+##  Screenshots
+![Dashboard](./assets/dashboard.png)
+![Library](./assets/library.png)
 
 ---
 
-## 🛠 Tech Stack
+
+##  Key Features
+- Search millions of books via Google Books API with instant results and book details
+- Organize books into Want to Read, Currently Reading, and Read shelves with one-click management
+- Add star ratings (1-5) and write personal reviews to capture your reading thoughts
+- Track statistics including total books, books read, and recent activity
+- Literary-inspired interface with elegant typography, smooth animations, and responsive layout
+- JWT-based authentication with encrypted passwords for private, secure libraries
+
+---
+
+## Tech Stack
 - **Frontend:** React + TypeScript, Tailwind CSS, React Router
 - **Backend:** Node.js, Express, JWT, bcrypt
-- **Database:** MongoDB Atlas + Mongoose
-- **External API:** Google Books
+- **Database:** MongoDB + Mongoose
+- **External API:** Google Books API
 - **Charts:** Chart.js
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1 Clone & install
