@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface Book {
   googleId: string;
@@ -39,8 +39,6 @@ const BookDetailsModal: React.FC<Props> = ({ userBook, open, onClose, onSave }) 
   const [review, setReview] = useState(userBook.review || '');
   const [saving, setSaving] = useState(false);
 
-  if (!open) return null;
-
   const handleSave = async () => {
     setSaving(true);
     await onSave({ shelf, rating, review });
@@ -49,12 +47,14 @@ const BookDetailsModal: React.FC<Props> = ({ userBook, open, onClose, onSave }) 
   };
 
   // Real-time save on rating or review change
-  React.useEffect(() => {
+  useEffect(() => {
     if (userBook.rating !== rating || userBook.review !== review || userBook.shelf !== shelf) {
       handleSave();
     }
     // eslint-disable-next-line
   }, [rating, review, shelf]);
+
+  if (!open) return null;
 
   const { book } = userBook;
 

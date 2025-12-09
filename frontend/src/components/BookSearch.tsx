@@ -35,15 +35,37 @@ const BookSearch: React.FC<Props> = ({ onAdd }) => {
 
   return (
     <div className="mb-8">
-      <form onSubmit={handleSearch} className="flex mb-4">
+      <form onSubmit={handleSearch} className="flex gap-2 mb-4">
         <input
           type="text"
           value={query}
           onChange={e => setQuery(e.target.value)}
           placeholder="Search for books..."
-          className="flex-1 px-4 py-2 border rounded-l"
+          style={{
+            flex: 1,
+            padding: '10px 16px',
+            fontSize: '15px',
+            borderRadius: '12px',
+            border: 'none',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.06)'
+          }}
         />
-        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-r">Search</button>
+        <button 
+          type="submit" 
+          style={{
+            backgroundColor: '#5e3a27',
+            borderRadius: '10px',
+            color: 'white',
+            padding: '10px 18px',
+            border: 'none',
+            cursor: 'pointer',
+            transition: '0.3s ease'
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#9a6e4c')}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#5e3a27')}
+        >
+          Search
+        </button>
       </form>
       {loading && <div>Loading...</div>}
       {error && <div className="text-red-500">{error}</div>}

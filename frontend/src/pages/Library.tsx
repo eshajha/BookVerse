@@ -85,15 +85,25 @@ const Library: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Book Search</h2>
-      <BookSearch onAdd={handleAddBook} />
-      <h2 className="text-2xl font-bold mb-4">My Library</h2>
+    <div className="min-h-screen p-4" style={{ background: 'linear-gradient(135deg, #faf7f2 0%, #e4d4c0 40%, #c1a487 100%)', backgroundAttachment: 'fixed', paddingBottom: '4rem' }}>
+      <div className="max-w-4xl mx-auto">
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '30px', fontWeight: '700', color: '#5e3a27', marginBottom: '1rem', borderBottom: '3px solid #9a6e4c', display: 'inline-block', paddingBottom: '4px' }}>Book Search</h2>
+        <BookSearch onAdd={handleAddBook} />
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '30px', fontWeight: '700', color: '#5e3a27', marginBottom: '1rem', marginTop: '2rem', borderBottom: '3px solid #9a6e4c', display: 'inline-block', paddingBottom: '4px' }}>My Library</h2>
       <div className="flex gap-2 mb-4">
         {Object.entries(shelfLabels).map(([key, label]) => (
           <button
             key={key}
-            className={`px-3 py-1 rounded ${activeShelf === key ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+            style={{
+              backgroundColor: activeShelf === key ? '#5e3a27' : '#e0d4c8',
+              color: activeShelf === key ? 'white' : '#5e3a27',
+              fontWeight: activeShelf === key ? '600' : '400',
+              border: 'none',
+              borderRadius: '10px',
+              padding: '8px 18px',
+              cursor: 'pointer',
+              transition: '0.3s ease'
+            }}
             onClick={() => setActiveShelf(key)}
           >
             {label}
@@ -131,6 +141,7 @@ const Library: React.FC = () => {
           }}
         />
       )}
+      </div>
     </div>
   );
 };

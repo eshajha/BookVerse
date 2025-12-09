@@ -39,13 +39,32 @@ const Bookshelf: React.FC<Props> = ({ books, onBookClick }) => {
         {books.map(userBook => (
           <div
             key={userBook._id}
-            className="bg-white p-2 rounded shadow flex flex-col items-center cursor-pointer"
+            style={{
+              background: 'rgba(255, 255, 255, 0.75)',
+              backdropFilter: 'blur(5px)',
+              borderRadius: '14px',
+              padding: '12px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+              cursor: 'pointer',
+              transition: '0.3s ease',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 6px 18px rgba(0,0,0,0.12)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)';
+            }}
             onClick={() => handleBookClick(userBook)}
           >
-            <img src={userBook.book.cover} alt={userBook.book.title} className="w-24 h-36 object-cover mb-2" />
-            <div className="font-semibold text-center mb-1">{userBook.book.title}</div>
+            <img src={userBook.book.cover} alt={userBook.book.title} className="w-24 h-36 object-cover mb-2 rounded" />
+            <div className="font-semibold text-center mb-1 text-sm">{userBook.book.title}</div>
             <div className="text-xs text-gray-600 mb-2">{userBook.book.authors?.join(', ')}</div>
-            <div className="text-xs text-blue-600">Shelf: {userBook.shelf}</div>
+            <div className="text-xs" style={{ color: '#5e3a27' }}>Shelf: {userBook.shelf}</div>
           </div>
         ))}
       </div>
