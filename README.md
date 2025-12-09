@@ -6,13 +6,10 @@
 ---
 
 ##  Screenshots
-![Dashboard](./assets/dashboard.png)
-![Library](./assets/library.png)
-
----<img width="1920" height="1080" alt="dashboard" src="https://github.com/user-attachments/assets/cafbd0c2-c3f6-4097-91b8-866a3b9aa656" />
+<img width="1920" height="1080" alt="dashboard" src="https://github.com/user-attachments/assets/cafbd0c2-c3f6-4097-91b8-866a3b9aa656" />
 <img width="1920" height="1080" alt="library" src="https://github.com/user-attachments/assets/6fb09a6f-09cb-458d-8e7f-ccde70ed053f" />
 
-
+---
 
 ##  Key Features
 - Search millions of books via Google Books API with instant results and book details
